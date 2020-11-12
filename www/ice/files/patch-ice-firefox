@@ -1,0 +1,12 @@
+--- ice-firefox	2020-11-12 08:23:01.260027000 -0800
++++ ice-firefox2	2020-11-11 20:08:55.276320000 -0800
+@@ -26,7 +26,7 @@
+ os.system('echo "user_pref(\\"browser.tabs.warnOnClose\\", false);" >> ' + profilepath + '/user.js')
+ os.system('echo "user_pref(\\"plugin.state.flash\\", 2);" >> ' + profilepath + '/user.js')
+ os.system('echo "user_pref(\\"toolkit.legacyUserProfileCustomizations.stylesheets\\", true);" >> ' + profilepath + '/user.js')
+-os.system('cp -n /usr/lib/peppermint/ice/search.json.mozlz4 ' + profilepath + '/search.json.mozlz4')
+-os.system('cp -n /usr/lib/peppermint/ice/places.sqlite ' + profilepath + '/places.sqlite')
++os.system('cp -n /usr/local/lib/peppermint/ice/search.json.mozlz4 ' + profilepath + '/search.json.mozlz4')
++os.system('cp -n /usr/local/lib/peppermint/ice/places.sqlite ' + profilepath + '/places.sqlite')
+ os.system(execute)
+ os.system('rm -rf ' + path + '/cache2')

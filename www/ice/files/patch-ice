@@ -1,0 +1,50 @@
+--- ice	2020-11-12 08:23:01.259878000 -0800
++++ ice2	2020-11-11 20:16:11.445404000 -0800
+@@ -41,14 +41,15 @@
+ _PROFILES_DIR = "{0}/profiles".format(_ICE_DIR)
+ _FF_PROFILES_DIR = "{0}/firefox".format(_ICE_DIR)
+ _EPIPHANY_PROFILES_DIR = "{0}/epiphany".format(_ICE_DIR)
+-_ICE_ICON = "/usr/share/pixmaps/ice.png"
++_ICE_ICON = "/usr/local/share/pixmaps/ice.png"
+ _ICON_DIR = "{0}/icons".format(_ICE_DIR)
+-_BRAVE_BIN = "/usr/bin/brave-browser"
+-_CHROME_BIN = "/usr/bin/google-chrome"
+-_CHROMIUM_BIN = "/usr/bin/chromium-browser"
+-_VIVALDI_BIN = "/usr/bin/vivaldi-stable"
+-_FIREFOX_BIN = "/usr/bin/firefox"
+-_EPIPHANY_BIN = "/usr/bin/epiphany-browser"
++_BRAVE_BIN = "/usr/local/bin/brave-browser"
++_CHROME_BIN = "/usr/local/bin/google-chrome"
++# _CHROMIUM_BIN = "/usr/local/bin/chromium-browser"
++_CHROMIUM_BIN = "/usr/local/bin/chrome"
++_VIVALDI_BIN = "/usr/local/bin/vivaldi-stable"
++_FIREFOX_BIN = "/usr/local/bin/firefox"
++_EPIPHANY_BIN = "/usr/local/bin/epiphany-browser"
+ 
+ gettext.bindtextdomain(
+     'messages',
+@@ -703,7 +704,7 @@
+         if self.chrome.get_active() is True:
+             self.browser = "google-chrome"
+         elif self.chromium.get_active() is True:
+-            self.browser = "chromium-browser"
++            self.browser = "chrome"
+         elif self.brave.get_active() is True:
+             self.browser = "brave"
+         elif self.vivaldi.get_active() is True:
+@@ -817,13 +818,13 @@
+         os.makedirs(self.chromepath)
+ 
+         try:
+-            shutil.copyfile('/usr/lib/peppermint/ice/search.json.mozlz4',
++            shutil.copyfile('/usr/local/lib/peppermint/ice/search.json.mozlz4',
+                             path + '/search.json.mozlz4')
+         except FileNotFoundError:
+             print("Error: search.json.mozlz4 not found")
+ 
+         try:
+-            shutil.copyfile('/usr/lib/peppermint/ice/places.sqlite',
++            shutil.copyfile('/usr/local/lib/peppermint/ice/places.sqlite',
+                             path + '/places.sqlite')
+         except FileNotFoundError:
+             print("Error: places.sqlite not found")

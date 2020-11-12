@@ -1,0 +1,15 @@
+# $FreeBSD$
+
+PORTNAME=	ice
+DISTVERSION = 6.0.8
+DISTVERSIONPREFIX=  ice-
+CATEGORIES=	www
+MASTER_SITES=	https://github.com/peppermintos/ice/archive/
+DISTNAME=	v6.0.8
+
+MAINTAINER=	darkoverlordofdata@gmail.com
+COMMENT=	PeppermintOS Ice SSB
+
+LICENSE=	GPLv2
+
+.include <bsd.port.mk>

@@ -1,0 +1,16 @@
+# $FreeBSD$
+
+PORTNAME=	desktop
+DISTVERSION = 2.5.7
+DISTVERSIONPREFIX=  release-
+DISTVERSIONSUFFIX= 	-linux1
+CATEGORIES=	devel
+MASTER_SITES=	https://github.com/shiftkey/desktop/archive/archive
+DISTNAME=	release-2.5.7-linux1
+
+MAINTAINER=	github@brendanforster.com
+COMMENT=	GitHub Desktop - The Linux Fork
+
+LICENSE=	MIT
+
+.include <bsd.port.mk>
