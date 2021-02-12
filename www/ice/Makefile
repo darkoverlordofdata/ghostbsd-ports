@@ -37,13 +37,13 @@ install:
 	cp work/usr/lib/peppermint/ice/places.sqlite /usr/local/lib/peppermint/ice/places.sqlite
 	cp work/usr/lib/peppermint/ice/search.json.mozlz4 /usr/local/lib/peppermint/ice/search.json.mozlz4
 	cp work/usr/share/applications/ice.desktop /usr/local/share/applications/ice.desktop
-	cp work/usr/share/pixmaps/ice.png /usr/share/pixmaps/ice.png
+	cp work/usr/share/pixmaps/ice.png /usr/local/share/pixmaps/ice.png
 	cp work/usr/share/ice/locale/fr/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/fr/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/ja/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/ja/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/nl/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/nl/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/pl/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/pl/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/pt_BR/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/pt_BR/LC_MESSAGES/messages.po
-	cp work/usr/share/ice/locale/pt_PT/LC_MESSAGES/messages.po  /usr/local/shareice/locale/pt_PT/LC_MESSAGES/messages.po
+	cp work/usr/share/ice/locale/pt_PT/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/pt_PT/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/sv/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/sv/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/zh_CN/LC_MESSAGES/messages.po  /usr/local/share/ice/locale/zh_CN/LC_MESSAGES/messages.po
 	cp work/usr/share/ice/locale/messages.pot  /usr/local/share/ice/locale/messages.pot
