@@ -1,5 +1,5 @@
---- ice-firefox	2020-11-12 08:23:01.260027000 -0800
-+++ ice-firefox2	2020-11-11 20:08:55.276320000 -0800
+--- /home/darko/GitHub/ice/usr/bin/ice-firefox	2021-08-02 16:22:39.509533000 -0400
++++ /home/darko/GitHub/ghostbsd-ports/www/ice/work/usr/bin/ice-firefox	2021-08-02 16:11:13.237786000 -0400
 @@ -26,7 +26,7 @@
  os.system('echo "user_pref(\\"browser.tabs.warnOnClose\\", false);" >> ' + profilepath + '/user.js')
  os.system('echo "user_pref(\\"plugin.state.flash\\", 2);" >> ' + profilepath + '/user.js')

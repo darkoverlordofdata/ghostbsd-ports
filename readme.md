@@ -20,6 +20,14 @@ make clean
 
 ```
 
+```
+diff -u /home/darko/GitHub/ice/usr/bin/ice /home/darko/GitHub/ghostbsd-ports/www/ice/work/usr/bin/ice > /home/darko/GitHub/ghostbsd-ports/www/ice/files/patch-ice
+diff -u /home/darko/GitHub/ice/usr/bin/ice-firefox /home/darko/GitHub/ghostbsd-ports/www/ice/work/usr/bin/ice-firefox > /home/darko/GitHub/ghostbsd-ports/www/ice/files/patch-ice-firefox
+
+```
+
+```
+
 ## devel/desktop -> GitHub Desktop
 
 work in progress

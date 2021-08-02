@@ -1,6 +1,6 @@
---- ice	2020-11-12 08:23:01.259878000 -0800
-+++ ice2	2020-11-11 20:16:11.445404000 -0800
-@@ -41,14 +41,15 @@
+--- /home/darko/GitHub/ice/usr/bin/ice	2021-08-02 16:22:39.509453000 -0400
++++ /home/darko/GitHub/ghostbsd-ports/www/ice/work/usr/bin/ice	2021-08-02 16:11:18.199892000 -0400
+@@ -41,14 +41,14 @@
  _PROFILES_DIR = "{0}/profiles".format(_ICE_DIR)
  _FF_PROFILES_DIR = "{0}/firefox".format(_ICE_DIR)
  _EPIPHANY_PROFILES_DIR = "{0}/epiphany".format(_ICE_DIR)
@@ -12,27 +12,17 @@
 -_CHROMIUM_BIN = "/usr/bin/chromium-browser"
 -_VIVALDI_BIN = "/usr/bin/vivaldi-stable"
 -_FIREFOX_BIN = "/usr/bin/firefox"
--_EPIPHANY_BIN = "/usr/bin/epiphany-browser"
+-_EPIPHANY_BIN = "/usr/bin/epiphany"
 +_BRAVE_BIN = "/usr/local/bin/brave-browser"
 +_CHROME_BIN = "/usr/local/bin/google-chrome"
-+# _CHROMIUM_BIN = "/usr/local/bin/chromium-browser"
-+_CHROMIUM_BIN = "/usr/local/bin/chrome"
++_CHROMIUM_BIN = "/usr/local/bin/chromium-browser"
 +_VIVALDI_BIN = "/usr/local/bin/vivaldi-stable"
 +_FIREFOX_BIN = "/usr/local/bin/firefox"
-+_EPIPHANY_BIN = "/usr/local/bin/epiphany-browser"
++_EPIPHANY_BIN = "/usr/local/bin/epiphany"
  
  gettext.bindtextdomain(
      'messages',
-@@ -703,7 +704,7 @@
-         if self.chrome.get_active() is True:
-             self.browser = "google-chrome"
-         elif self.chromium.get_active() is True:
--            self.browser = "chromium-browser"
-+            self.browser = "chrome"
-         elif self.brave.get_active() is True:
-             self.browser = "brave"
-         elif self.vivaldi.get_active() is True:
-@@ -817,13 +818,13 @@
+@@ -811,13 +811,13 @@
          os.makedirs(self.chromepath)
  
          try:
