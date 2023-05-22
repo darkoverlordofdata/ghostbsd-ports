@@ -8,6 +8,7 @@ fetch:
 .PHONY: patch
 patch:
 	patch work/usr/bin/ice < files/patch-ice
+	sed -i '' -e 's/chromium-browser/chrome/g' ./work/usr/bin/ice
 	patch work/usr/bin/ice-firefox < files/patch-ice-firefox
 
 .PHONY: install
